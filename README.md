@@ -2,11 +2,11 @@
 
 ## 
 
-The name of your project.
+Untitled mobile first app for finding places to eat
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This is an mobile first web application to settle the long unanswered question "Where do you want to go eat?". Using the Zomato API the user will be able to search nearby restaurants and search menus
 
 ## API and Data Sample
 
