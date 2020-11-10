@@ -2,11 +2,11 @@
 
 ## 
 
-Untitled mobile first app for finding places to eat
+Untitled mobile first app for finding biographies on musical artists
 
 ## Project Description
 
-This is an mobile first web application to to search music artists and return information about them including
+This is an desktop first web application to to search music artists and return information about them including
 Artist Photo
 Artist Bio
 Artist Musicography
@@ -36,11 +36,14 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Render artist information including Name, Genre, Albumn List, Artist Bio, Artist Photo 
 - Allow user to select artist album track and listen to sample
 - Allow user to follow link to music store to purchase/add music to playlist
+- artist/song recommendations based on mood/time of day/ etc
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
+- add ability to create account
+- add Apple Music and Spotify 
+- Add ability to add friends 
+- add timeline of user likes and shared 
 - Use local storage to save user favorites
 
 ## Project Schedule
@@ -64,20 +67,19 @@ URL
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Students usally put in around 40+ hours into their project 1.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Wireframe        | H | 3hrs| 3.5hrs | 3.5hrs |
-| HTML Structure   | H | 3hrs| 3.5hrs | 3.5hrs |
-| Create Search    | H | 3hrs| 3.5hrs | 3.5hrs |
-| Adding Form      | H | 3hrs| 3.5hrs | 3.5hrs |
-| CSS/Design 	   | L | 3hrs| 3.5hrs | 3.5hrs |
-| Basic CSS	   | H | 3hrs| 3.5hrs | 3.5hrs |
-| Adding Form 	   | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Wireframe        | H | 3hrs| 3.5hrs | 0 |
+| HTML Structure   | H | 3hrs| 3.5hrs | 0 |
+| Create Search    | H | 3hrs| 3.5hrs | 0 |
+| Adding Form      | H | 3hrs| 3.5hrs | 0 |
+| CSS/Design 	   | L | 3hrs| 3.5hrs | 0 |
+| Basic CSS	   | H | 3hrs| 3.5hrs | 0 |
+| Adding Form 	   | H | 3hrs| 3.5hrs | 0 |
+| Working with API | H | 3hrs| 2.5hrs | 0 |
+| UX/UD		   | L | 3hrs| 3.5hrs | 0 |
+| DOM Elements	   | L | 3hrs| 3.5hrs | 0 |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
