@@ -6,7 +6,12 @@ Untitled mobile first app for finding places to eat
 
 ## Project Description
 
-This is an mobile first web application to settle the long unanswered question "Where do you want to go eat?". Using the Zomato API the user will be able to search nearby restaurants and search menus
+This is an mobile first web application to to search music artists and return information about them including
+Artist Photo
+Artist Bio
+Artist Musicography
+Genre
+Link to artist on music store platform
 
 ## API and Data Sample
 
@@ -16,17 +21,21 @@ This is an mobile first web application to settle the long unanswered question "
 
 ## Wireframes
 
-URL
+https://wireframe.cc/jVKB06 
+ 
+ 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The functionality will then be divided into two separate lists: MPV and PostMVP.  
+
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
 - Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Render artist information including Name, Genre, Albumn List, Artist Bio, Artist Photo 
+- Allow user to select artist album track and listen to sample
+- Allow user to follow link to music store to purchase/add music to playlist
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
