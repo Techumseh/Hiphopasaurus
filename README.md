@@ -2,7 +2,7 @@
 
 ## 
 
-Untitled mobile first app for finding biographies on musical artists
+Hihopasaurus is a web app designed for finding biographies on musical artists. 
 
 ## Project Description
 
