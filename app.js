@@ -1,50 +1,51 @@
 const DOMAIN = 'https://www.theaudiodb.com';
-const API_KEY = 'https://www.theaudiodb.com/api/v1/json/1/search.php?';
+const API_KEY = 'https://www.theaudiodb.com/api/v1/json/1/';
 const BASE_URL = `${DOMAIN}`;
 const getOptions = async (artist) => {
   const url = 'https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artists}';
 
-        try {
-          const response = await axios.get(url)
-          const artistList = response.data.Search
+       // try {
+          //const response = await axios.get(url,)
+          //const artistList = response.data.Search
           //console.log(artistList)
           //const list = Object.keys(response.data.message)
-           optionValues(artistList)
+          // optionValues(artistList)
 
-        } catch (error) {
+       // } catch (error) {
           //console.log(error)
-        }
+      //  }
 }
-const renderList = (artistArray) => {
-  return artistArray.forEach((artists) => {
-    let artistInfo = `
-    <a href="${BASE_URL}i=${artists.strArtist}">${artist.strArtist}</a>
-  `;
-    const listContainer = document.querySelector('.artist-info');
-    listContainer.insertAdjacentHTML('beforeend', artistInfo);
-  })
-};
+response.forEach((artist) => {
+ // console.log(artist)
+
+  const artistDiv = document.querySelector('.artist')
+  console.log(artistDiv)
+  //const artistReturn = document.createElement('div')
+  artistDiv.className = `artist-data`
+  artistDiv.append(artistsReturn)
+
+  const name = document.createElement('p')
+  const artistName = artist.strArtist
+  name.textContent = `${artistName}`
+  artistDiv.append(name)
 
 
-function optionValues(artistList) {
- 
-  const select = document.querySelector('#artistData')
-  console.log(select)
-  return artistList.forEach((artistList) => {
-    const option = document.createElement('div')
-    //option.value = `${artist}`
-    
-    option.textContent = `
-     ${artists.strArtist} 
-     ${artists.intFormedYear} 
-     ${artists.istrLabel}
-     ${artists.strBiographyEN}
-     ${artists.strGenre}
-     ${artists.strWebsite}
-     `
-    select.append(option)
-  })
-}
+  const img = document.createElement('img')
+  img.setAttribute('src', artist.artistLogo)
+  personDiv.append(img)
+  
+  const bio = document.createElement('bio')
+  const artistBio = artist.bio
+  bio.textContent = artistBio
+  artistDiv.append(bio)
+
+  //const ageTag = document.createElement('age')
+  //ageTag.textContent = "age": ${person.dob.age}
+  //personDiv.append(ageTag)
+
+
+});
+
 
 
 function getValue(event) {
