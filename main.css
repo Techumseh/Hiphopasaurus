@@ -83,3 +83,9 @@ p {
   font: 12px Monaco, Mono-Space;
   margin: 0;
 }
+
+.img {
+
+  width: 25%;
+  height: 25%;
+}

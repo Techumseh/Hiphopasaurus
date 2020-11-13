@@ -4,25 +4,25 @@ const BASE_URL = `${DOMAIN}`;
 const getOptions = async (artist) => {
   const url = 'https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artists}';
 
-       // try {
-          //const response = await axios.get(url,)
-          //const artistList = response.data.Search
-          //console.log(artistList)
-          //const list = Object.keys(response.data.message)
-          // optionValues(artistList)
+       try {
+          const response = await axios.get(url,)
+          const artistList = response.data.Search
+          console.log(artistList)
+          const list = Object.keys(response.data.message)
+          optionValues(artistList)
 
-       // } catch (error) {
-          //console.log(error)
-      //  }
+       } catch (error) {
+          console.log(error)
+       }
 }
 response.forEach((artist) => {
- // console.log(artist)
+ console.log(artist)
 
   const artistDiv = document.querySelector('.artist')
   console.log(artistDiv)
   //const artistReturn = document.createElement('div')
   artistDiv.className = `artist-data`
-  artistDiv.append(artistsReturn)
+  artistDiv.append(artistsData)
 
   const name = document.createElement('p')
   const artistName = artist.strArtist
@@ -30,9 +30,9 @@ response.forEach((artist) => {
   artistDiv.append(name)
 
 
-  const img = document.createElement('img')
+  const img2 = document.createElement('div')
   img.setAttribute('src', artist.artistLogo)
-  personDiv.append(img)
+  personDiv.append(div.artistLogo)
   
   const bio = document.createElement('bio')
   const artistBio = artist.bio
