@@ -16,15 +16,17 @@ const getOptions = async (artist) => {
            const artistTwitter = document.querySelector(`#artist-twitter`)
            const artistFacebook = document.querySelector(`#artist-facebook`)
            const artistLogo = document.querySelector(`#artist-logo`)
-           const artistWebsite = document.querySelector(`#artist-website`)
+         const artistWebsite = document.querySelector(`#artist-website`)
+         const artistPLaylist = document.querySelector(`artist-playlist`)
          
 
            artistName.textContent = artist.strArtist
            artistBio.textContent = artist.strBiographyEN
-           artistLogo.src = artist.strArtistLogo
+           artistLogo.src = artist.strArtistThumb
            artistTwitter.textContent = artist.strTwitter
            artistFacebook.textContent = artist.strArtist
            artistWebsite.textContent = artist.strWebsite
+           artistLastFM.textContent = artist.strLastFMchart
            console.log(artistName)
           
          
