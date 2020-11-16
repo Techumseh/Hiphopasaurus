@@ -2,49 +2,40 @@ const DOMAIN = 'https://www.theaudiodb.com';
 const API_KEY = 'https://www.theaudiodb.com/api/v1/json/1/';
 const BASE_URL = `${DOMAIN}`;
 const getOptions = async (artist) => {
-  const url = 'https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artists}';
+  const url = `https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artist}`;
 
        try {
-          const response = await axios.get(url,)
-          const artistList = response.data.Search
-          console.log(artistList)
-          const list = Object.keys(response.data.message)
-          optionValues(artistList)
+          const response = await axios.get(url)
+          const artist = response.data.artists[0]
+          
+        
+           console.log(artist)
+           
+           const artistName = document.querySelector('#artist-name')
+           const artistBio = document.querySelector(`#artist-bio`)
+           const artistTwitter = document.querySelector(`#artist-twitter`)
+           const artistFacebook = document.querySelector(`#artist-facebook`)
+           const artistLogo = document.querySelector(`#artist-logo`)
+           const artistWebsite = document.querySelector(`#artist-website`)
+         
+
+           artistName.textContent = artist.strArtist
+           artistBio.textContent = artist.strBiographyEN
+           artistLogo.src = artist.strArtistLogo
+           artistTwitter.textContent = artist.strTwitter
+           artistFacebook.textContent = artist.strArtist
+           artistWebsite.textContent = artist.strWebsite
+           console.log(artistName)
+          
+         
+         
+        
 
        } catch (error) {
           console.log(error)
        }
 }
-response.forEach((artist) => {
- console.log(artist)
 
-  const artistDiv = document.querySelector('.artist')
-  console.log(artistDiv)
-  //const artistReturn = document.createElement('div')
-  artistDiv.className = `artist-data`
-  artistDiv.append(artistsData)
-
-  const name = document.createElement('p')
-  const artistName = artist.strArtist
-  name.textContent = `${artistName}`
-  artistDiv.append(name)
-
-
-  const img2 = document.createElement('div')
-  img.setAttribute('src', artist.artistLogo)
-  personDiv.append(div.artistLogo)
-  
-  const bio = document.createElement('bio')
-  const artistBio = artist.bio
-  bio.textContent = artistBio
-  artistDiv.append(bio)
-
-  //const ageTag = document.createElement('age')
-  //ageTag.textContent = "age": ${person.dob.age}
-  //personDiv.append(ageTag)
-
-
-});
 
 
 
