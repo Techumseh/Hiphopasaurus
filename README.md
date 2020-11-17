@@ -5,6 +5,8 @@
 Hihopasaurus is a web app designed for finding biographies on musical artists. 
 
 ## Project Description
+https://techumseh.github.io/Hiphopasaurus/
+
 http://hiphopasaurus.techcellent.dx.am
 
 
