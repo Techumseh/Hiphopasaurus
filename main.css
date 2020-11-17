@@ -51,20 +51,36 @@ h3 {
   padding: 20px;
 }
 
+a {
+  font-family: Roboto;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   position: absolute;
+  display: 
   bottom: 20px;
   left: 20px;
   color: white;
-  margin: 0;
+  margin: 1em 0px;
+  padding: 20px;
 }
 
-table {
+#artist-info {
+  display: flex;
+  width: 75%;
+  height: absolute;
+
+}
+
+/* table {
   display: grid;
   width: 80%;
   grid-template-columns: lfr;
-}
+} */
 .row {
   grid-row: 1;
   grid-column: 1/3;
