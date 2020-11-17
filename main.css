@@ -62,8 +62,6 @@ p {
   font-family: "Roboto", sans-serif;
   position: absolute;
   display: flex;
-  bottom: 20px;
-  left: 20px;
   color: white;
   margin: 1em 0px;
   padding: 20px;
@@ -73,7 +71,6 @@ p {
   display: flex;
   width: 75%;
   height: absolute;
-
 }
 
 /* table {
