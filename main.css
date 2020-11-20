@@ -87,3 +87,18 @@ p {
   width: auto;
   max-height: 33%;
 }
+
+@media (max-width: 480px) {
+  body {
+    background-color: rgb(63, 54, 54);
+  }
+  #artist-bio {
+    font-size: 36px;
+  }
+  #artist-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
